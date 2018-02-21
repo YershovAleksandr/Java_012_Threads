@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.nam</groupId>
-  <artifactId>chapter-11-threading</artifactId>
+  <artifactId>chapter-11-threads</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>chapter-11-threading</name>
+  <name>chapter-11-threads</name>
   <url>http://maven.apache.org</url>
 
   <properties>
