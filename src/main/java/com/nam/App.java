@@ -51,9 +51,10 @@ public class App
             ex.printStackTrace();
         }
 */
-        System.err.println("FUcker fuck motherfucka");
+        System.out.println("FUcker fuck motherfucka");
 
-        SimpleThread st = new SimpleThread();
+        //SimpleThread st = new SimpleThread();
+        ConsumerManifacturer.Run();
 
         //System.exit(42);
     }
