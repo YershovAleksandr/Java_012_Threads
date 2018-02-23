@@ -40,6 +40,7 @@ public class App
 
         th.start();
 
+        System.out.println("Thread 1 " + th);
         System.out.println("GetName " + th.getName());
         System.out.println("GetPriority " + th.getPriority());
 
@@ -48,10 +49,37 @@ public class App
 
         th2.start();
 
+        System.out.println("Thread 2 " + th2);
         System.out.println("GetName2 " + th2.getName());
         System.out.println("GetPriority2 " + th2.getPriority());
 
 
         System.out.print("END");
+
+        Thread t = Thread.currentThread();
+
+        System.out.println("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
+
+        System.out.println("Currrent Thread " + t);
+        System.out.println("GetName " + t.getName());
+
+        t.setName("Fucker Fuck");
+
+        System.out.println("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
+
+        System.out.println("Currrent Thread " + t);
+        System.out.println("GetName " + t.getName());
+
+
+        try{
+            Thread.sleep(5000);
+        }catch(InterruptedException ex){
+            System.err.println("Wtf");
+            ex.printStackTrace();
+        }
+
+        System.err.println("FUcker fuck motherfucka");
+
+        System.exit(42);
     }
 }
