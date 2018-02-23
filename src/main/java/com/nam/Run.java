@@ -18,10 +18,6 @@ public class Run implements Runnable{
                 Thrd t = new Thrd();
             }
 
-            if (livetime++ > 10){
-                //Thread.interrupted();
-                return;
-            }
-        }while(true);
+         }while(true);
     }
 }
