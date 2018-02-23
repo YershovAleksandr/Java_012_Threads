@@ -9,7 +9,7 @@ public class SimpleThread {
     }
 
     class Callme{
-        synchronized void call(String msg){
+        /*synchronized*/ void call(String msg){
             System.out.print("[" + msg);
 
             try{
@@ -36,7 +36,9 @@ public class SimpleThread {
         }
 
         public void run(){
-            target.call(msg);
+            synchronized (target) {
+                target.call(msg);
+            }
         }
     }
 
