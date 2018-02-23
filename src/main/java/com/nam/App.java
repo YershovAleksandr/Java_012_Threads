@@ -80,6 +80,32 @@ public class App
 
         System.err.println("FUcker fuck motherfucka");
 
-        System.exit(42);
+        if (th2.isAlive()){
+            System.err.println("Kill Th");
+
+            try{
+                th2.join();
+            } catch(InterruptedException ex){
+                System.err.println("WTF");
+                ex.printStackTrace();
+            }
+            System.err.println("FUKER FUCK MOTHRFUCKA");
+            //th.interrupt();
+        }
+
+     /*   if (th2.isAlive()){
+            System.err.println("Kill Th2");
+
+            try{
+                th2.join();
+            } catch(InterruptedException ex){
+                System.err.println("WTF");
+                ex.printStackTrace();
+            }
+
+            //th2.interrupt();
+        }*/
+
+        //System.exit(42);
     }
 }

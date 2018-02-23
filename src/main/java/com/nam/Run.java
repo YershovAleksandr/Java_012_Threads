@@ -2,6 +2,7 @@ package com.nam;
 
 public class Run implements Runnable{
     private int tick = 0;
+    private int livetime = 0;
     public void run() {
         do {
             try {
@@ -15,7 +16,11 @@ public class Run implements Runnable{
                 System.out.println();
 
                 Thrd t = new Thrd();
+            }
 
+            if (livetime++ > 10){
+                //Thread.interrupted();
+                return;
             }
         }while(true);
     }
