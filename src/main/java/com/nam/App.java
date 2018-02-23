@@ -54,7 +54,13 @@ public class App
         System.out.println("FUcker fuck motherfucka");
 
         //SimpleThread st = new SimpleThread();
-        ConsumerManifacturer.Run();
+        //ConsumerManifacturer.Run();
+
+        Thread t = Thread.currentThread();
+
+        Thread.State ts = t.getState();
+
+        System.out.println("Thread State = " + ts);
 
         //System.exit(42);
     }
